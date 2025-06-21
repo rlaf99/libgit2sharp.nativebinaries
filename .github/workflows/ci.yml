@@ -49,6 +49,8 @@ jobs:
         uses: actions/checkout@v4.2.2
         with:
           submodules: true
+      - name: Apply patch
+        run: git apply --directory=libgit2 Lg2\01.patch
       - name: Build Windows
         if: runner.os == 'Windows'
         run: ./build.libgit2.ps1 ${{ matrix.param }}
