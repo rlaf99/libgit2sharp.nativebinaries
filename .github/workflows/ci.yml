@@ -16,13 +16,13 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: windows-2019
+          - os: windows-2022
             name: win-x86
             param: -x86
-          - os: windows-2019
+          - os: windows-2022
             name: win-x64
             param: -x64
-          - os: windows-2019
+          - os: windows-2022
             name: win-arm64
             param: -arm64
           - os: ubuntu-24.04
